@@ -15,6 +15,29 @@
 
 <body>
 
+    <!-- Small and Extra Small Screen will collapse the navbar -->
+    <!-- bg primary is the primary background color defined in bootstrap  -->
+    <!-- navbar remains at the top of the page wherever we scroll the page -->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <!-- data-target #Navbar is an Id of an element which will be target of this button here -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Displaly information as a branding information like logo -->
+            <a class="navbar-brand mr-auto" href="#">Brand Name Logo</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <!-- mr-auto specifies right margin as much as possible -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -70,7 +93,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
